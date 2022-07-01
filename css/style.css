@@ -207,13 +207,11 @@ img {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
     border-radius: 2px;
     margin: 5px 0;
+    background: var(--white);
 }
 
 .select-container {
     position: relative;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 .form-select {
