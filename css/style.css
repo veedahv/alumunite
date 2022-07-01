@@ -305,4 +305,32 @@ img {
     .container {
         flex-direction: column;
     }
+      
+    .aside {
+        padding: 80px 30px;
+        flex: 1 1 34%;
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .title {
+        font-size: 36px;
+        margin-top: 60px;
+    }
+
+    .main {
+        padding: 80px 30px;
+    }
+  
+    .add-school-link {
+        font-size: 12px;
+    }
+        
+    .fa-graduation-cap {
+        font-size: 30px;
+    }
+
+    .fa-plus-circle {
+        font-size: 20px;
+    }
+
 }
