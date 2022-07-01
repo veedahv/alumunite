@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/3ad8d4fbe1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alumunite</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <aside class="aside">
+            <div class="">
+                <div class="">
+                    <img src="./assets/logo.png" alt="Alumunite Logo" class="logo">
+                </div>
+                <div class="steps-container">
+                    <div class="flex">
+                        <button class="btn flex back-btn">
+                            <i class="fa fa-arrow-left text-secondary"></i>
+                            <span class="font-medium login-text">
+                                Back to Login
+                            </span>
+                        </button>
+                    </div>
+                    <ul class="steps-ul">
+                        <li class="flex step">
+                            <span class="step-point checked">
+                            <i class="fa fa-check-circle checked-point" aria-hidden="true"></i>
+                            </span>
+                            <span class="step-title checked">
+                                PERSONAL DATA
+                            </span>
+                        </li>
+                        <li class="flex step">
+                            <span class="step-point unchecked font-medium">
+                                2
+                            </span>
+                            <div class="">
+                                <span class="step-title">
+                                    ALUMNI DATA
+                                </span>
+                                <p class="step-note">
+                                    Select an account type to customise your Alumunite experience
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="./assets/Layer 2.png" alt="" class="alumni-img">
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="main-container">
+                <h1 class="title">
+                    School Information
+                </h1>
+
+                <!-- alumunite -->
+                <form class="form">
+                    <div class="school-info">
+                        <div class="input-group">
+                            <label for="" class="form-label font-medium text-sm">
+                                Select a school you graduated from
+                            </label>
+                            <select name="" id="" class="form-select form-input w-full">
+                                <option value="" class="">
+                                    Faith Academy
+                                </option>
+                            </select>
+                            <div class="add-school-link font-medium text-sm">
+                                Can't find your school?
+                                <a class="text-secondary">
+                                    Add your school to the list
+                                </a>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="" id="" class="form-input">
+                            <label for="" class="form-label font-medium text-sm">
+                                Still schooling here presently
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <!-- 20/10/2012 -->
+                            <label for="" class="form-label font-medium text-sm">
+                                Year Graduated
+                            </label>
+                            <input type="date" pattern="dd/mm/yyyy" name="" id="" class="form-input w-full">
+                        </div>
+                    </div>
+                    <!-- <i class="fa-regular fa-circle-plus"></i> -->
+                    <!-- <i class="fa-solid fa-circle-plus"></i> -->
+                    <i class="fas fa-circle-plus"></i>
+                    <div class="input-group flex add-school-container">
+                        <div class="flex">
+                            <i class="fas fa-graduation-cap text-secondary"></i>
+                            <!-- <i class="fas fa-plus-circle"></i> -->
+                            <div class="">
+                                <h2 class="font-medium text-sm text-secondary">
+                                    Add Another School
+                                </h2>
+                                <p class="text-xs">
+                                    More schools means more connection
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn">
+                            <i class="fas fa-plus-circle text-secondary"></i>
+                            <!-- Submit -->
+                        </button>
+                    </div>
+                    <div class="input-group submit-btn-container">
+                        <button class="btn submit-btn font-medium">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <img src="./design/Desktop - 65.png" alt="" class="w-full">
+    <script src="./js/script.js"></script>
+</body>
+<!-- Select a school you graduated from
+
+Faith Academy
+
+Can't find your school? Add your school to the list
+
+Still schooling here presently
+
+Year Graduated
+
+20/10/2012
+
+Add Another School More schools means more connection -->
+
+</html>

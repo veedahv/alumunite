@@ -1,0 +1,335 @@
+:root {
+    --primary: #f7fbfe;
+    --secondary: #0084e3;
+    --white: #ffffff;
+    --text-dark: #212529;
+    --green: #71c621;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    /* min-height: 100vh; */
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    right: 0;
+    border-top: 4px solid var(--secondary);
+    /* min-height: 100vh; */
+}
+
+.aside {
+    /* background: var(--primary); */
+    padding: 80px 50px;
+    flex: 1 1 34%;
+    /* box-shadow: 0 30px rgba(0, 0, 0, 0.6); */
+    /* box-shadow: 10px 0 0 0 red; */
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.steps-container {
+    margin: 80px 0;
+}
+
+.back-btn {
+    gap: 8px;
+    align-items: center;
+}
+
+.fa-arrow-left {
+    font-size: 18px;
+}
+
+.login-text {
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.steps-ul {
+    margin: 30px 0;
+    margin-left: 15px;
+}
+
+.step {
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.checked-point {
+    font-size: 30px;
+    color: var(--green);
+}
+
+.step-point {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
+    /* border: 1px solid var(--green);
+    color: var(--green); */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-point.unchecked {
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.step-title {
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checked.step-title {
+    color: #ccc;
+}
+
+.step-note {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 2;
+    margin: 5px 0;
+}
+
+.alumni-img {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.main {
+    background: var(--primary);
+    padding: 80px 50px;
+    flex: 1 1 66%;
+}
+
+.main-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 100px;
+}
+
+.form {
+    max-width: 400px;
+}
+
+.school-info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+}
+
+.input-group {
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
+    margin: 20px 0;
+}
+
+.form-input {
+    padding: 15px 12px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+.form-select {
+    /* content: "&#xf107;";
+    width: 100%; */
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* padding: 10px;
+    margin: 20px 0; */
+
+    /* border: 1px solid #ccc; */
+    /* background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%2326749a'><polygon points='0,0 100,0 50,50'/></svg>")
+        no-repeat;
+    background-size: 16px;
+    background-position: calc(100% - 20px) 17px;
+    background-repeat: no-repeat; */
+    /* background-color: #ccc; */
+}
+
+.form-select:before {
+    position: absolute;
+    font-family: "FontAwesome";
+    font-weight: 900;
+    top: 0;
+    left: 10px;
+    content: "\f005";
+}
+
+.form-select:after {
+    /* content: "\f087";  */
+    /* font-family: FontAwesome; */
+    /* font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 900;
+    text-decoration: inherit;
+    position: absolute;
+    font-size: 400px;
+    color: lightblue;
+    top: 50%;
+    left: 50%; */
+    /* margin: -300px 0 0 -200px; */
+    /* z-index: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1; */
+  }
+
+  .form-select:after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    float: right;
+    margin-left: 5px;
+    display: inline-flex;
+  }
+  /* .accordion-check:checked + .accordion:after {
+    content: "\f068";
+  } */
+  
+
+  /* .fas {
+    font-weight: 900;
+} */
+/* <style>
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+<style>
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+
+<style>
+.fa-plus-circle:before {
+    content: "\f055";
+} */
+
+.add-school-link {
+    font-size: 14px;
+    text-align: right;
+    margin: 10px 0;
+}
+
+
+.add-school-container {
+    /* background: #EBF5FD; */
+    /* background: rgba(247, 251, 254, 0.466); */
+    background: rgba(0, 132, 227, .05);
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.fa-graduation-cap {
+    font-size: 35px;
+}
+
+.submit-btn-container {
+    /* margin-left: auto; */
+    text-align: right;
+}
+
+.submit-btn {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    /* font-size: 18px; */
+    /* margin-left: auto; */
+}
+
+@media (max-width: 769px) {
+    .container {
+        flex-direction: column;
+    }
+}
