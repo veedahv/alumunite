@@ -1,6 +1,7 @@
 const schoolInfo = document.getElementById('school-info');
 const schoolInfoContainer = document.getElementById('school-info-container');
 const addSchoolBtn = document.getElementById('add-school-btn');
+const form = document.getElementById('form');
 
 
 const addNewSchool = () => {
@@ -25,3 +26,9 @@ const addNewSchool = () => {
 addSchoolBtn.addEventListener('click', addNewSchool);
 
 addNewSchool();
+
+const submitForm = (e) => {
+    e.preventDefault();
+}
+
+form.addEventListener('submit', submitForm);
