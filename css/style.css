@@ -215,6 +215,7 @@ img {
     position: relative;
 }
 
+.form-date,
 .form-select {
     position: relative;
     -webkit-appearance: none;
