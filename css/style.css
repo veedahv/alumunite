@@ -99,6 +99,9 @@ img {
     max-width: 350px;
     margin: auto;
 }
+.logo {
+    width: 160px;
+}
 .steps-container {
     margin: 80px 0;
 }
@@ -171,6 +174,7 @@ img {
     left: 15px;
 }
 .alumni-img {
+    width: 264px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .main {
