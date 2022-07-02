@@ -4,6 +4,7 @@
     --white: #ffffff;
     --text-dark: #212529;
     --green: #71c621;
+    --red: #fc3030;
 }
 
 * {
@@ -15,6 +16,19 @@
 
 body {
     color: #212529;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--secondary);
 }
 
 a {
@@ -55,6 +69,61 @@ img {
 
 .font-medium {
     font-weight: 500;
+}
+
+/* 
+.success-toast {
+    padding: 25px 30px;
+    text-align: center;
+    max-width: 350px;
+    background: var(--white);
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: none;
+} */
+
+.success-toast {
+    padding: 15px 25px;
+    /* text-align: center; */
+    max-width: 350px;
+    background: var(--white);
+    border-left: 3px solid var(--green);
+    position: fixed;
+    top: 10px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    right: 0;
+    z-index: 10;
+    gap: 10px;
+    display: none;
+    /* display: flex; */
+    align-items: flex-start;
+}
+
+/* 
+.success-icon {
+    margin: 10px auto;
+    font-size: 40px;
+}
+
+.success-message {
+    margin: 10px auto;
+    font-size: 20px;
+} */
+
+.success-icon {
+    font-size: 30px;
+}
+
+.success-message {
+    font-size: 18px;
+}
+
+.fa-check-circle {
+    color: var(--green);
 }
 
 .container {
@@ -116,7 +185,7 @@ img {
 
 .checked-point {
     font-size: 30px;
-    color: var(--green);
+    /* color: var(--green); */
 }
 
 .step-point {
@@ -131,12 +200,20 @@ img {
     z-index: 1;
 }
 
-.step-point.unchecked {
+.unchecked .step-point {
     border-radius: 50%;
     border: 1px solid var(--secondary);
     color: var(--secondary);
     font-size: 14px;
     font-weight: 700;
+}
+
+.unchecked .checked-point {
+    display: none;
+}
+
+.checked .step-value {
+    display: none;
 }
 
 .step-title {
@@ -146,7 +223,7 @@ img {
     font-weight: 700;
 }
 
-.checked.step-title {
+.checked .step-title {
     color: #ccc;
 }
 
@@ -155,6 +232,10 @@ img {
     color: #ccc;
     line-height: 2;
     margin: 5px 0;
+}
+
+.checked .step-note {
+    display: none;
 }
 
 .steps-connector {
@@ -206,12 +287,29 @@ img {
     outline: none;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
     border-radius: 2px;
-    margin: 5px 0;
-    background: var(--white);
+    /* margin: 5px 0; */
+    background: transparent;
+    position: relative;
 }
+
+.delete-school-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-trash-alt {
+    color: var(--red);
+}
+
+/* .fa-trash-alt:nth-of-type(1) { */
+/* .trash-btn:first-of-type {
+        display: none;
+    } */
 
 .date-container,
 .select-container {
+    background: var(--white);
+    margin: 5px 0;
     position: relative;
 }
 
@@ -221,13 +319,20 @@ img {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    z-index: 10;
 }
 
-.form-date::-webkit-calendar-picker-indicator{
-    opacity:0;
-  }
+.form-date.error,
+.form-select.error {
+    /* box-shadow: 0 0 1px rgba(255, 0, 0, 0.6); */
+    border: 1px solid red;
+}
 
-  .fa-calendar-alt,
+.form-date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.fa-calendar-alt,
 .fa-angle-down {
     position: absolute;
     right: 15px;
@@ -238,6 +343,7 @@ img {
 
 .fa-calendar-alt {
     color: #ccc;
+    font-size: 20px;
 }
 
 .form-check {
@@ -261,7 +367,7 @@ img {
     color: var(--white);
 }
 
-.form-check:checked + .form-label-check::before {
+.form-check:checked+.form-label-check::before {
     content: "\f058";
     color: var(--secondary);
 }
@@ -314,13 +420,13 @@ img {
     .container {
         flex-direction: column;
     }
-      
+
     .aside {
         padding: 80px 30px;
         flex: 1 1 34%;
         border-right: 1px solid rgba(0, 0, 0, 0.05);
     }
-    
+
     .title {
         font-size: 36px;
         margin-top: 60px;
@@ -329,11 +435,11 @@ img {
     .main {
         padding: 80px 30px;
     }
-  
+
     .add-school-link {
         font-size: 12px;
     }
-        
+
     .fa-graduation-cap {
         font-size: 30px;
     }

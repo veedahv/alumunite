@@ -16,6 +16,12 @@
 </head>
 
 <body>
+    <div class="success-toast" id="success-toast">
+        <i class="fa fa-check-circle success-icon" aria-hidden="true"></i>
+        <p class="success-message font-medium">
+            Alumni data successfully submitted!
+        </p>
+    </div>
     <div class="container flex">
         <aside class="aside">
             <div class="aside-container">
@@ -32,18 +38,21 @@
                         </button>
                     </div>
                     <ul class="steps-ul">
-                        <li class="flex step">
-                            <span class="step-point checked">
+                        <li class="flex step checked">
+                            <span class="step-point">
                                 <i class="fa fa-check-circle checked-point" aria-hidden="true"></i>
                             </span>
-                            <span class="step-title checked">
+                            <span class="step-title">
                                 PERSONAL DATA
                             </span>
                         </li>
                         <hr class="steps-connector">
-                        <li class="flex step">
-                            <span class="step-point unchecked font-medium">
-                                2
+                        <li class="flex step unchecked step-2">
+                            <span class="step-point">
+                                <i class="fa fa-check-circle checked-point" aria-hidden="true"></i>
+                                <span class="font-medium step-value">
+                                    2
+                                </span>
                             </span>
                             <div class="">
                                 <span class="step-title">
@@ -73,14 +82,21 @@
                             <div class="school-info">
                                 <div class="input-group">
                                     <label class="form-label font-medium text-sm">
-                                        Select a school you graduated from
+                                        <div class="flex delete-school-container">
+                                            <span class="text-sm">
+                                                Select a school you graduated from
+                                            </span>
+                                            <button class="btn trash-btn">
+                                                <i class="fa fa-trash-alt"></i>
+                                            </button>
+                                        </div>
                                         <div class="select-container">
                                             <i class="fas fa-angle-down text-secondary"></i>
                                             <select name="select-school" class="form-select form-input w-full">
                                                 <option value="" class="">
                                                     -- Select School --
                                                 </option>
-                                                <option value="" class="">
+                                                <option value="faith academy" class="">
                                                     Faith Academy
                                                 </option>
                                             </select>
@@ -104,8 +120,9 @@
                                     <label class="form-label font-medium text-sm">
                                         Year Graduated
                                         <div class="date-container">
-                                                                                        <i class="fas fa-calendar-alt"></i>
-                                            <input type="date" pattern="dd/mm/yyyy" name="date" class="form-date form-input w-full">
+                                            <i class="far fa-calendar-alt"></i>
+                                            <input type="date" pattern="dd/mm/yyyy" data-date-inline-picker="true" name="date"
+                                                class="form-date form-input w-full">
                                         </div>
                                     </label>
                                 </div>
@@ -172,7 +189,7 @@
             </div>
         </main>
     </div>
-    <img src="./design/Desktop - 65.png" alt="" class="w-full">
+    <!-- <img src="./design/Desktop - 65.png" alt="" class="w-full"> -->
     <script src="./js/script.js"></script>
 </body>
 <!-- Select a school you graduated from
