@@ -6,126 +6,76 @@
     --green: #71c621;
     --red: #fc3030;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-
 body {
     color: #212529;
 }
-
 body::-webkit-scrollbar {
     width: 5px;
 }
-
 body::-webkit-scrollbar-track {
     background: var(--primary);
 }
-
 body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: var(--secondary);
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 img {
     max-width: 100%;
 }
-
 .btn {
     border: none;
     outline: none;
     background: transparent;
     cursor: pointer;
 }
-
 .w-full {
     width: 100%;
 }
-
 .flex {
     display: flex;
 }
-
 .text-secondary {
     color: var(--secondary);
 }
-
 .text-sm {
     font-size: 14px;
 }
-
 .text-xs {
     font-size: 12px;
 }
-
 .font-medium {
     font-weight: 500;
 }
-
-/* 
-.success-toast {
-    padding: 25px 30px;
-    text-align: center;
-    max-width: 350px;
-    background: var(--white);
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: none;
-} */
-
 .success-toast {
     padding: 15px 25px;
-    /* text-align: center; */
     max-width: 350px;
     background: var(--white);
     border-left: 3px solid var(--green);
     position: fixed;
     top: 10px;
-    /* left: 50%;
-    transform: translateX(-50%); */
     right: 0;
     z-index: 10;
     gap: 10px;
     display: none;
-    /* display: flex; */
     align-items: flex-start;
 }
-
-/* 
-.success-icon {
-    margin: 10px auto;
-    font-size: 40px;
-}
-
-.success-message {
-    margin: 10px auto;
-    font-size: 20px;
-} */
-
-.success-icon {
-    font-size: 30px;
-}
-
 .success-message {
     font-size: 18px;
 }
-
 .fa-check-circle {
+    font-size: 30px;
     color: var(--green);
 }
-
 .container {
     display: flex;
     align-items: stretch;
@@ -133,7 +83,6 @@ img {
     position: relative;
     min-height: 100vh;
 }
-
 .container::after {
     content: "";
     position: absolute;
@@ -141,53 +90,38 @@ img {
     right: 0;
     border-top: 3px solid var(--secondary);
 }
-
 .aside {
     padding: 80px 50px;
     flex: 1 1 34%;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
-
 .aside-container {
     max-width: 350px;
     margin: auto;
 }
-
 .steps-container {
     margin: 80px 0;
 }
-
 .back-btn {
     gap: 8px;
     align-items: center;
 }
-
 .fa-arrow-left {
     font-size: 18px;
 }
-
 .login-text {
-    font-size: 14px;
     color: var(--text-dark);
 }
-
 .steps-ul {
     margin: 30px 0;
     margin-left: 15px;
     list-style: none;
     position: relative;
 }
-
 .step {
     margin: 30px 0;
     gap: 20px;
 }
-
-.checked-point {
-    font-size: 30px;
-    /* color: var(--green); */
-}
-
 .step-point {
     flex: none;
     width: 30px;
@@ -199,45 +133,34 @@ img {
     position: relative;
     z-index: 1;
 }
-
 .unchecked .step-point {
     border-radius: 50%;
     border: 1px solid var(--secondary);
     color: var(--secondary);
-    font-size: 14px;
     font-weight: 700;
 }
-
 .unchecked .checked-point {
     display: none;
 }
-
 .checked .step-value {
     display: none;
 }
-
 .step-title {
     margin: 5px 0;
     display: inline-block;
-    font-size: 14px;
     font-weight: 700;
 }
-
 .checked .step-title {
     color: #ccc;
 }
-
 .step-note {
-    font-size: 12px;
     color: #ccc;
     line-height: 2;
     margin: 5px 0;
 }
-
 .checked .step-note {
     display: none;
 }
-
 .steps-connector {
     width: 1px;
     height: 50px;
@@ -247,72 +170,55 @@ img {
     top: 15px;
     left: 15px;
 }
-
 .alumni-img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-
 .main {
     background: var(--primary);
     padding: 80px 50px;
     flex: 1 1 66%;
 }
-
 .main-container {
     max-width: 700px;
     margin: auto;
 }
-
 .title {
     font-size: 36px;
     margin-top: 100px;
 }
-
 .form {
     max-width: 400px;
 }
-
 .school-info {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 5px 0;
 }
-
 .input-group {
     margin: 20px 0;
 }
-
+.form-date.success:disabled,
 .form-input {
     padding: 15px 12px;
     border: none;
     outline: none;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
     border-radius: 2px;
-    /* margin: 5px 0; */
     background: transparent;
     position: relative;
 }
-
 .delete-school-container {
     justify-content: space-between;
     align-items: center;
 }
-
 .fa-trash-alt {
     color: var(--red);
 }
-
-/* .fa-trash-alt:nth-of-type(1) { */
-/* .trash-btn:first-of-type {
-        display: none;
-    } */
-
 .date-container,
 .select-container {
     background: var(--white);
     margin: 5px 0;
     position: relative;
 }
-
 .form-date,
 .form-select {
     position: relative;
@@ -321,17 +227,17 @@ img {
     appearance: none;
     z-index: 10;
 }
-
 .form-date.error,
 .form-select.error {
-    /* box-shadow: 0 0 1px rgba(255, 0, 0, 0.6); */
-    border: 1px solid red;
+    border: 1px solid var(--red);
 }
-
+.form-date.success,
+.form-select.success {
+    border: 1px solid var(--green);
+}
 .form-date::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
-
 .fa-calendar-alt,
 .fa-angle-down {
     position: absolute;
@@ -340,16 +246,13 @@ img {
     transform: translateY(-50%);
     z-index: 5;
 }
-
 .fa-calendar-alt {
     color: #ccc;
     font-size: 20px;
 }
-
 .form-check {
     display: none;
 }
-
 .form-label-check::before {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     border-radius: 50%;
@@ -366,18 +269,14 @@ img {
     content: "\f111";
     color: var(--white);
 }
-
 .form-check:checked+.form-label-check::before {
     content: "\f058";
     color: var(--secondary);
 }
-
 .add-school-link {
-    font-size: 14px;
     text-align: right;
     margin: 10px 0;
 }
-
 .add-school-container {
     background: rgba(0, 132, 227, .05);
     padding: 15px;
@@ -385,29 +284,23 @@ img {
     align-items: center;
     gap: 5px;
 }
-
 .add-school-desc {
     align-items: center;
     gap: 10px;
 }
-
 .fa-graduation-cap {
     font-size: 35px;
 }
-
 .add-title,
 .add-note {
     margin: 2px 0;
 }
-
 .fa-plus-circle {
     font-size: 25px;
 }
-
 .submit-btn-container {
     text-align: right;
 }
-
 .submit-btn {
     background: var(--secondary);
     color: var(--white);
@@ -415,37 +308,29 @@ img {
     width: 200px;
     border-radius: 5px;
 }
-
 @media (max-width: 769px) {
     .container {
         flex-direction: column;
     }
-
     .aside {
         padding: 80px 30px;
         flex: 1 1 34%;
         border-right: 1px solid rgba(0, 0, 0, 0.05);
     }
-
     .title {
         font-size: 36px;
         margin-top: 60px;
     }
-
     .main {
         padding: 80px 30px;
     }
-
     .add-school-link {
         font-size: 12px;
     }
-
     .fa-graduation-cap {
         font-size: 30px;
     }
-
     .fa-plus-circle {
         font-size: 20px;
     }
-
 }
