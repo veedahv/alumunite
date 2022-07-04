@@ -285,8 +285,9 @@ img {
 .add-school-container {
     background: rgba(0, 132, 227, .05);
     padding: 15px;
-    justify-content: space-between;
+    text-align: left;
     align-items: center;
+    justify-content: space-between;
     gap: 5px;
 }
 .add-school-desc {

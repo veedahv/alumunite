@@ -17,6 +17,11 @@ const addNewSchool = () => {
             input.closest('.school-info').querySelector('.form-date').disabled = input.checked;
         });
     })
+    schoolInfoContainer.querySelectorAll('.form-date').forEach(input => {
+        input.addEventListener('focus', function(event) {
+            event.target.showPicker();
+          });
+    })
     schoolInfoContainer.querySelectorAll('.school-info').forEach((container, i) => {
         if (i !== 0) {
             let btn = container.querySelector('.trash-btn');
